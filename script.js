@@ -27,3 +27,23 @@ function loadTheme(){
 }
 
 loadTheme();
+
+// CV DOWNLOAD TRACKING
+
+function trackCVDownload(){
+    const buttons = document.querySelectorAll(".btn-color2");
+    buttons.forEach(function(button){
+        if(button.textContent.trim() === "Download CV"){
+            button.addEventListener("click", function(){
+                if(typeof gtag === "function"){
+                    gtag("event", "cv_download", {
+                        event_category: "engagement",
+                        event_label: "CV Download"
+                    });
+                }
+            });
+        }
+    });
+}
+
+trackCVDownload();
