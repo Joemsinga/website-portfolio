@@ -442,7 +442,46 @@ footer p{
     text-align: center;
 }
 
+/* DARK MODE - ADDED */
 
+body[data-theme="dark"] {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body[data-theme="dark"] p {
+    color: rgb(200, 200, 200);
+}
+
+body[data-theme="dark"] a {
+    color: white;
+}
+
+body[data-theme="dark"] .details-container,
+body[data-theme="dark"] .contact-info-upper-container,
+body[data-theme="dark"] .color-container {
+    background: #1e1e1e;
+    border-color: rgb(90, 90, 90);
+}
+
+body[data-theme="dark"] .menu-links {
+    background-color: #1e1e1e;
+}
+
+body[data-theme="dark"] .menu-links a {
+    color: white;
+}
+
+body[data-theme="dark"] .hamburger-icon span {
+    background-color: white;
+}
+
+#theme-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
 
 
 
