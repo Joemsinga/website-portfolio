@@ -160,3 +160,16 @@
         gap: 1.5rem;
     }
 }
+
+/* EXPERIENCE & PROJECTS CARD STACKING FIX - ADDED */
+
+@media screen and (max-width: 600px) {
+    .about-containers {
+        flex-direction: column;
+    }
+
+    .details-container {
+        flex: none;
+        width: 100%;
+    }
+}
