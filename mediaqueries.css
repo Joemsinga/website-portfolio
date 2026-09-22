@@ -128,13 +128,14 @@
     }
 }
 
-/* GLOBAL IMAGE OVERLAP SAFETY NET - ADDED */
-
-img {
-    max-width: 100%;
-}
+/* MOBILE IMAGE FIX - CORRECTED */
 
 @media screen and (max-width: 600px) {
+    .section-pic-container img {
+        width: 100%;
+        height: 100%;
+    }
+
     .about-details-container {
         margin-top: 1.5rem;
     }
@@ -157,10 +158,5 @@ img {
     #socials-container {
         flex-wrap: wrap;
         gap: 1.5rem;
-    }
-
-    .contact-icon,
-    .icon:not(.arrow) {
-        flex-shrink: 0;
     }
 }
