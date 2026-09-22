@@ -104,3 +104,63 @@
 
 }
 
+/* MOBILE NAV & PROFILE PIC OVERLAP FIX - ADDED */
+
+@media screen and (max-width: 600px) {
+    #hamburger-nav {
+        height: auto;
+        min-height: 10vh;
+        padding: 1rem 5%;
+        position: relative;
+        z-index: 10;
+    }
+
+    #profile {
+        margin-top: 1.5rem;
+    }
+
+    .section-pic-container {
+        width: 50vw;
+        height: 50vw;
+        max-width: 200px;
+        max-height: 200px;
+        margin: 0 auto 2rem;
+    }
+}
+
+/* GLOBAL IMAGE OVERLAP SAFETY NET - ADDED */
+
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .about-details-container {
+        margin-top: 1.5rem;
+    }
+
+    .details-container {
+        overflow: hidden;
+    }
+
+    .article-container {
+        gap: 1.5rem;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    #socials-container {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .contact-icon,
+    .icon:not(.arrow) {
+        flex-shrink: 0;
+    }
+}
